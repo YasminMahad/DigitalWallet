@@ -1,0 +1,14 @@
+<table>
+    <th>
+    <td>name</td>
+    <td>recipient</td>
+    <td>date_and_time</td>
+    </th>
+    {% for notification in notifications%}
+    <tr>
+        <td>{{ notification.name}}</td>
+        <td>{{ notification.recipient}}</td>
+        <td>{{ notification.date_and_time}}</td>
+    </tr>
+    {%endfor%}
+</table>

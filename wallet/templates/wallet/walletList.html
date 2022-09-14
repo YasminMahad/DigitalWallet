@@ -1,0 +1,15 @@
+<table>
+    <th>
+    <td>customer</td>
+    <td>balance</td>
+    <td>dateCreated</td>
+    </th>
+    {% for wallet in wallets%}
+    <tr>
+        <td>{{ wallet.customer}}</td>
+        <td>{{ wallet.balance}}</td>
+        <td>{{ wallet.dateCreated}}</td>
+    </tr>
+    {%endfor%}
+</table>
+

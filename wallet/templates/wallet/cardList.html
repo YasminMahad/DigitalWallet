@@ -1,0 +1,16 @@
+<table>
+    <th>
+    <td>card_number</td>
+    <td>card_date</td>
+    <td>wallet</td>
+    <td>issuer</td>
+    </th>
+    {% for card in cards%}
+    <tr>
+        <td>{{ card.card_number}}</td>
+        <td>{{ card.card_date}}</td>
+        <td>{{ card.wallet}}</td>
+        <td>{{ card.issuer}}</td>
+    </tr>
+    {%endfor%}
+</table>
